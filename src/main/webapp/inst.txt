@@ -1,0 +1,76 @@
+
+As discussed on the skype conversation please find below the details of the task.Please go through it and let me know by when you can submit it back.
+
+Inorder to make things easier and faster for all of us I would like you to perform the test below which would be the same that the candidates are suppose to write.
+
+Coding Exercise: Create a spring 3 java web application that displays the weather.
+
+How to submit the code sample
+  - Create a github repository and import the code
+
+  - Include a README.md file that has instructions on how to compile,
+    execute the tests, and start the application
+
+  - Send a link to the github repository
+
+**** This portion is very important, please read carefully ****
+
+  We will execute the following commands
+    - > git clone <your repository url>
+    - > cd <your project name>
+    - > mvn package
+
+  Expectations:
+    - The maven build will run your unit tests, they will pass, and
+      generate a .war file.
+
+    - The war file can be deployed to a tomcat server and will result
+      in a working web application
+
+    - All of the following annotations are used correctly:
+      - @Controller, @RequestMapping, @AutoWired, @Valid, @Service,
+        @Configuration, @Value, @RequestMapping, @Bean, @Autowired
+
+    - The unit test covers all validation requirements
+
+If the project does not compile, or the war file does not deploy, we
+will not accept the submission.
+
+Project Requirements:
+
+  - The web application should have a single web page that has a form
+    input and a button
+
+  - When the user enters a valid us zipcode into the form and clicks
+    the button, it should display a page with the city name, state
+    name, and current temperature in fahrenheit.
+
+  - If the user puts in an input that is not in the correct format for
+    a zip code (5 numbers) the page should display an error: "invalid
+    zip code format'
+
+  - If the user enters an input that is in the correct format but the
+    zip code does not exist the page should display an error: 'zipcode
+    not found'
+
+  - The project must contain some unit tests
+
+  - The unit tests must cover the validation
+
+How to get the weather data:
+http://www.wunderground.com/weather/api/d/docs?d=data/conditions
+
+ - The API Key is: ed044d75b91fb500
+
+Hint: The example in the docs uses q/state/city.json, but you can use
+q/<zipcode>.json instead for example:
+
+http://api.wunderground.com/api/ed044d75b91fb500/conditions/q/94117.json
+http://api.wunderground.com/api/ed044d75b91fb500/conditions/q/94117.xml
+
+You may choose to use either the JSON or XML api, but please be
+prepared to explain why you chose the one you did.
+
+If you have any questions/concerns please get back to me.
+
+Regards,
